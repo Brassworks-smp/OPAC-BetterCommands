@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "org.opnsoc.opac_togglechat.mixin",
+  "package": "org.opnsoc.opac_bettercommands.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
   ],
