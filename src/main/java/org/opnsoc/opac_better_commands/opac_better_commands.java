@@ -15,7 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Mod(opac_better_commands.MODID)
 public class opac_better_commands {
-    public static final String MODID = "opac-better-commands";
+    public static final String MODID = "opac_better_commands";
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public static final ConcurrentHashMap<UUID, Boolean> PARTY_CHAT_ENABLED = new ConcurrentHashMap<>();
