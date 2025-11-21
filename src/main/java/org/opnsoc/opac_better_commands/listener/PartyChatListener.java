@@ -15,7 +15,7 @@ import org.opnsoc.opac_better_commands.opac_better_commands;
 public class PartyChatListener {
     private static final Logger LOGGER = LoggerFactory.getLogger(PartyChatListener.class);
 
-    @SubscribeEvent(priority = EventPriority.HIGHEST)
+    @SubscribeEvent(priority = EventPriority.HIGH)
     public void onServerChat(ServerChatEvent event) {
         ServerPlayer player = event.getPlayer();
         Boolean isEnabled = opac_better_commands.PARTY_CHAT_ENABLED.getOrDefault(player.getUUID(), false);
