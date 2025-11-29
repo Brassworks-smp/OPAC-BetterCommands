@@ -15,7 +15,7 @@ import org.opnsoc.opac_better_commands.opac_better_commands;
 public class PartyChatListener {
     private static final Logger LOGGER = LoggerFactory.getLogger(PartyChatListener.class);
 
-    @SubscribeEvent(priority = EventPriority.HIGH)
+    @SubscribeEvent(priority = EventPriority.HIGHEST)
     public void onServerChat(ServerChatEvent event) {
         ServerPlayer player = event.getPlayer();
         Boolean isEnabled = opac_better_commands.PARTY_CHAT_ENABLED.getOrDefault(player.getUUID(), false);
@@ -30,6 +30,5 @@ public class PartyChatListener {
     public void onPlayerLoggedIn(PlayerLoggedInEvent event) {
         Player player = event.getEntity();
         opac_better_commands.PARTY_CHAT_ENABLED.put(player.getUUID(), false);
-        LOGGER.info("[PartyChat] Player {} joined, PARTY_CHAT_ENABLED set to false", player.getName().getString());
     }
 }
