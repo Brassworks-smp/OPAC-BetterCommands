@@ -1,5 +1,5 @@
 <div style="text-align: center;"> 
-<h1>SmallDoubling</h1> 
+<h1>Small Doubling</h1> 
 </div> 
 
 <p><strong>SmallDoubling</strong> is a lightweight Minecraft mod for <strong>NeoForge</strong> that enhances gameplay by allowing players to double small flower drops using bone meal.</p>
